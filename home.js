@@ -48,14 +48,39 @@ function coin_count_func(btn_id, name, phn_num){
     let coin_balance = get_inner_text("coin_balance")
     let service_name = document.getElementById(name).innerText
     let phone_number = document.getElementById(phn_num).innerText
+    let call_history_sec = document.getElementById("call_history_sec")
+    let call_history = []
     if(coin_balance < 20){
-        alert("Insufficient balance!!!!")
+        alert("Insufficient balance!!!! Minimum 20 coins required.")
         return;
     }
     else{
         let new_coin_balance = coin_balance - 20
         set_coin_balance(new_coin_balance)
         alert("Calling " + service_name + " " + phone_number + ".")
+        let call_details = {
+        srvc_name : service_name,
+        srvc_number : phone_number,
+        call_time : new Date().toLocaleTimeString()
+        }
+        call_history.push(call_details)
+    }
+
+    for (let i of call_history){
+        let div = document.createElement("div")
+        div.innerHTML = `
+        <div id="call_his_container" class="call_his flex justify-between items-center mt-5 px-2.5 bg-[#FAFAFA] rounded-lg">
+                    <div class="history_card_left">
+                        <h2 class="text-l font-semibold">${i.srvc_name}</h2>
+                        <p id="" class="text-gray-600">${i.srvc_number}</p>
+                    </div>
+                    <div class="history_card_right">
+                        <h2 class="text-l">${i.call_time}</h2>
+                    </div>
+                </div>
+        `
+
+        call_history_sec.appendChild(div)
     }
 
     })
@@ -93,3 +118,14 @@ copy_counter_func("copy_btn_anticur", "num_anticur")
 copy_counter_func("copy_btn_electricity", "num_electricity")
 copy_counter_func("copy_btn_brac", "num_brac")
 copy_counter_func("copy_btn_railway", "num_railway")
+
+
+// clear btn
+document.getElementById("clear_btn").addEventListener("click", function(e){
+    e.preventDefault()
+    
+    let call_history_cntainer = document.getElementById("call_history_sec")
+    call_history_cntainer.innerHTML = ""
+    call_history = []
+    alert("Call history cleared.")
+})
