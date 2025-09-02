@@ -31,7 +31,7 @@
                     <img src="assets/heart.png" alt="" class="w-[23px] h-[23px]">    
                 </div>
                 <div class="nav_right_div bg-[#F5FFF6] flex items-center gap-2 btn rounded-3xl">
-                    <h2 class="font-bold">100</h2>
+                    <h2 class="font-bold" id="coin_balance">100</h2>
                     <img src="assets/coin.png" alt="" class="w-[23px] h-[23px]">
                 </div>
                 <div class="nav_right_div bg-[#00A63E] btn rounded-3xl">
@@ -60,14 +60,14 @@
                             <i class="fa-regular fa-heart" id="heart_national"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">National Emergency Number</h2>
-                    <p class="text-gray-500">National Emergency</p>
-                    <h1 class="text-2xl font-bold mt-4">999</h1>
+                    <p id="name_national" class="text-gray-500">National Emergency</p>
+                    <h1 id="num_national" class="text-2xl font-bold mt-4">999</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">All</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_national" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_national" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -80,14 +80,14 @@
                             <i class="fa-regular fa-heart" id="heart_police"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Police Helpline Number</h2>
-                    <p class="text-gray-500">Police</p>
-                    <h1 class="text-2xl font-bold mt-4">999</h1>
+                    <p id="name_police" class="text-gray-500">Police</p>
+                    <h1 id="num_police" class="text-2xl font-bold mt-4">999</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">Police</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_police" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_police" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -100,14 +100,14 @@
                             <i class="fa-regular fa-heart" id="heart_fire"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Fire Service Number</h2>
-                    <p class="text-gray-500">Fire Service</p>
-                    <h1 class="text-2xl font-bold mt-4">999</h1>
+                    <p id="name_fire" class="text-gray-500">Fire Service</p>
+                    <h1 id="num_fire" class="text-2xl font-bold mt-4">999</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">Fire</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_fire" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_fire" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -120,14 +120,14 @@
                             <i class="fa-regular fa-heart" id="heart_hospital"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Ambulance Service</h2>
-                    <p class="text-gray-500">Ambulance</p>
-                    <h1 class="text-2xl font-bold mt-4">1994-999999</h1>
+                    <p id="name_hospital" class="text-gray-500">Ambulance</p>
+                    <h1 id="num_hospital" class="text-2xl font-bold mt-4">1994-999999</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">Health</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_hospital" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_hospital" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -140,14 +140,14 @@
                             <i class="fa-regular fa-heart" id="heart_child"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Women & Child Helpline</h2>
-                    <p class="text-gray-500">Women & Child Helpline</p>
-                    <h1 class="text-2xl font-bold mt-4">109</h1>
+                    <p id="name_child" class="text-gray-500">Women & Child Helpline</p>
+                    <h1 id="num_child" class="text-2xl font-bold mt-4">109</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">Help</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_child" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_child" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -160,14 +160,14 @@
                             <i class="fa-regular fa-heart" id="heart_anticur"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Anti-Corruption Helpline</h2>
-                    <p class="text-gray-500">Anti-Corruption</p>
-                    <h1 class="text-2xl font-bold mt-4">106</h1>
+                    <p id="name_anticur" class="text-gray-500">Anti-Corruption</p>
+                    <h1 id="num_anticur" class="text-2xl font-bold mt-4">106</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">Govt.</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_anticur" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_anticur" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -180,14 +180,14 @@
                             <i class="fa-regular fa-heart" id="heart_electricity"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Electricity Helpline</h2>
-                    <p class="text-gray-500">Electricity Outage</p>
-                    <h1 class="text-2xl font-bold mt-4">16216</h1>
+                    <p id="name_electricity" class="text-gray-500">Electricity Outage</p>
+                    <h1 id="num_electricity" class="text-2xl font-bold mt-4">16216</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">Electricity</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_electricity" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_electricity" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -200,14 +200,14 @@
                             <i class="fa-regular fa-heart" id="heart_brac"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Brac Helpline</h2>
-                    <p class="text-gray-500">Brac</p>
-                    <h1 class="text-2xl font-bold mt-4">16445</h1>
+                    <p id="name_brac" class="text-gray-500">Brac</p>
+                    <h1 id="num_brac" class="text-2xl font-bold mt-4">16445</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">NGO</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_brac" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_brac" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
 
@@ -220,14 +220,14 @@
                             <i class="fa-regular fa-heart" id="heart_railway"></i>
                     </div>
                     <h2 class="font-bold text-xl mt-2">Bangladesh Railway Helpline </h2>
-                    <p class="text-gray-500">Bangladesh Railway</p>
-                    <h1 class="text-2xl font-bold mt-4">163</h1>
+                    <p id="name_railway" class="text-gray-500">Bangladesh Railway</p>
+                    <h1 id="num_railway" class="text-2xl font-bold mt-4">163</h1>
                     <div class="bg-[#F2F2F2] rounded-3xl p-4 btn">
                         <p class="text-gray-500">Travel</p>
                     </div>
                     <div class="card_action mt-3 flex gap-2 items-center">
-                        <button class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
-                        <button class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button id="copy_btn_railway" class="btn btn-xs sm:btn-sm md:btn-md rounded-lg text-gray-500 px-10 py-2"><i class="fa-regular fa-copy"></i>  Copy</button>
+                        <button id="call_btn_railway" class="btn btn-xs sm:btn-sm md:btn-md bg-[#00A63E] text-white rounded-lg px-10 py-2"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                 </div>
                 <!---->
